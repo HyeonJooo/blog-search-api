@@ -13,7 +13,7 @@ import lombok.RequiredArgsConstructor;
 
 @Service
 @RequiredArgsConstructor
-public class SearchService {
+public class BlogSearchService {
 
 	private final List<BlogFinder> blogFinderList;
 
