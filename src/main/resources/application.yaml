@@ -1,0 +1,14 @@
+# ??? ??
+kakao:
+  api:
+    authorization: KakaoAK edfe37094c314b31e73b9a24820274a7
+    blog-search:
+      url: https://dapi.kakao.com
+
+# ??? ??
+naver:
+  api:
+    client-id: aiSm95H3v41xqomHM8Va
+    client-secret: YJCFB_BdB3
+    blog-search:
+      url: https://openapi.naver.com
