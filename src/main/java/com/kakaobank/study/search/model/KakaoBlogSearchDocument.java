@@ -1,10 +1,10 @@
 package com.kakaobank.study.search.model;
 
+import lombok.Builder;
 import lombok.Getter;
-import lombok.Setter;
 
 @Getter
-@Setter
+@Builder
 public class KakaoBlogSearchDocument {
 	private String title;
 	private String contents;

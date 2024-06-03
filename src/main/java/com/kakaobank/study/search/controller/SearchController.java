@@ -7,16 +7,16 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.kakaobank.study.search.entity.SearchKeywordEntity;
 import com.kakaobank.study.search.model.BlogSearchCondition;
 import com.kakaobank.study.search.model.BlogSearchResponse;
+import com.kakaobank.study.search.model.SearchKeyword;
 import com.kakaobank.study.search.service.BlogSearchService;
 import com.kakaobank.study.search.service.PopularSearchService;
 
 import lombok.RequiredArgsConstructor;
 
 @RestController
-@RequestMapping("/blogs")
+@RequestMapping("/api/blogs")
 @RequiredArgsConstructor
 public class SearchController {
 
@@ -30,7 +30,7 @@ public class SearchController {
 	}
 
 	@GetMapping("/popular-searches")
-	public ResponseEntity<List<SearchKeywordEntity>> getPopularSearches() {
+	public ResponseEntity<List<SearchKeyword>> getPopularSearches() {
 		return ResponseEntity.ok(popularSearchService.getPopularSearches());
 	}
 }

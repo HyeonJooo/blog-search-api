@@ -1,16 +1,12 @@
 package com.kakaobank.study.search.finder;
 
-import java.util.List;
-
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
 
 import com.kakaobank.study.search.client.NaverBlogClient;
 import com.kakaobank.study.search.model.BlogSearchCondition;
 import com.kakaobank.study.search.model.BlogSearchResponse;
-import com.kakaobank.study.search.model.KakaoBlogSearchResponse;
 import com.kakaobank.study.search.model.NaverBlogSearchCondition;
-import com.kakaobank.study.search.model.NaverBlogSearchItem;
 import com.kakaobank.study.search.model.NaverBlogSearchResponse;
 import com.kakaobank.study.search.type.ServiceType;
 

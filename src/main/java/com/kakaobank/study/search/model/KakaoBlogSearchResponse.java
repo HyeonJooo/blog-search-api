@@ -2,11 +2,11 @@ package com.kakaobank.study.search.model;
 
 import java.util.List;
 
+import lombok.Builder;
 import lombok.Getter;
-import lombok.Setter;
 
 @Getter
-@Setter
+@Builder
 public class KakaoBlogSearchResponse {
 	private KakaoBlogSearchMeta meta;
 	private List<KakaoBlogSearchDocument> documents;

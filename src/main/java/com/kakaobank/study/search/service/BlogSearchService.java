@@ -9,9 +9,11 @@ import com.kakaobank.study.search.model.BlogSearchCondition;
 import com.kakaobank.study.search.model.BlogSearchResponse;
 import com.kakaobank.study.search.type.ServiceType;
 
+import lombok.Builder;
 import lombok.RequiredArgsConstructor;
 
 @Service
+@Builder
 @RequiredArgsConstructor
 public class BlogSearchService {
 

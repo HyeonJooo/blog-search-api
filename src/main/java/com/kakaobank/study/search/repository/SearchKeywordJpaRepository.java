@@ -1,6 +1,7 @@
 package com.kakaobank.study.search.repository;
 
 import java.util.List;
+import java.util.Optional;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Lock;
@@ -11,9 +12,9 @@ import com.kakaobank.study.search.entity.SearchKeywordEntity;
 import jakarta.persistence.LockModeType;
 
 @Repository
-public interface SearchKeywordRepository extends JpaRepository<SearchKeywordEntity, Long> {
+public interface SearchKeywordJpaRepository extends JpaRepository<SearchKeywordEntity, Long> {
 	@Lock(LockModeType.PESSIMISTIC_WRITE)
-	SearchKeywordEntity findByKeyword(String keyword);
+	Optional<SearchKeywordEntity> findByKeyword(String keyword);
 
-	List<SearchKeywordEntity> findTop10ByOrderByCountDesc();
+	Optional<List<SearchKeywordEntity>> findTop10ByOrderByCountDesc();
 }
